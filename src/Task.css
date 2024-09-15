@@ -1,0 +1,43 @@
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    /* border-radius: 10px; */
+     padding-left: 5%;
+    padding-right: 2%; 
+    font-size: 1.3rem;
+    /* background-color:whitesmoke; */
+    border-bottom: 3px solid whitesmoke;
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: 2s;
+}
+p{
+    font-weight: 100;
+}
+.taskbtns{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    height: 20px;
+    align-items: center;
+}
+.btn{
+    padding: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+.del{
+    color: whitesmoke;
+    background-color: transparent;
+}
+.up,.down{
+    background-color: transparent;
+    color: yellow;
+}

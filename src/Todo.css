@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.mainContainer{
+    margin: 2% auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    max-width: 500px;
+    /* background-color:rgb(122, 122, 0); */
+    background-color: transparent;
+
+}
+
+.ip{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+input{
+    outline: none;
+    border: none ;
+    border-radius: 6px;
+    height: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+.add{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(3, 155, 3);
+    cursor: pointer;
+    padding-left:5% ;
+    padding-right: 5%;
+    font-weight: 900;
+    color: whitesmoke;
+    font-size: 1rem;
+}
