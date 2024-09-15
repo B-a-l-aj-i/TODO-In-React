@@ -4,7 +4,7 @@ function Task({content,del,hup,hdo,index}){
 
     return(
         <div className="task">
-        <div>{++index}</div>
+        <div>{++index}.</div>
             <div>
             <p> {content}</p>
                 
