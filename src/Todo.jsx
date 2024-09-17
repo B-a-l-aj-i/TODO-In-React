@@ -1,11 +1,10 @@
 
 import "./Todo.css"
 import Task from "./Task";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function Todo(){
 
     let [tasks,setTasks]=useState(["eat","sleep",]);
-
     let [task,setTask]=useState("");
 
     function handleTask(e){
@@ -19,6 +18,16 @@ function Todo(){
             setTask("")
         }
     }
+    useEffect(()=>{
+        document.title="Todo-List"
+    })
+    useEffect(()=>{
+        document.addEventListener("keyup",(e)=>{
+            if(e.code=="Enter"){
+                handleAddTask();
+            }
+        })
+    },[task,document])
 
     function deleteTask(index){
         setTasks([...tasks.filter((_,i)=>i!=index)]);
@@ -35,8 +44,7 @@ function Todo(){
             setTasks([...tasks])
         }
     }
-
-
+    
     function handleDown(a){
         let b=a+1;
         if(a<tasks.length-1){        
